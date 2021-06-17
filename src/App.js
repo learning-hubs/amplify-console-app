@@ -11,19 +11,20 @@ import axios from "axios";
 Amplify.configure(awsconfig);
 
 class App extends React.Component {
-  // callAmplifyApi = () => {
-  //   API.get('todos', '/items', {});
-  // }
+  callAmplifyApi = async () => {
+    const res = await API.get('todos', '/items', {});
+    console.log("API Response: ", res);
+  }
 
-  // callSlsApi = () => {
-  //   axios.get('https://e2kmwpyr2i.execute-api.us-east-2.amazonaws.com/dev/todos')
-  //     .then(res => {
-  //       console.log(res);
-  //       return res.data;
-  //       // return res;
-  //     })
-  //     .catch(err => console.log(err));   
-  // }
+  callSlsApi = () => {
+    axios.get(' https://w3rj68ghf2.execute-api.us-east-2.amazonaws.com/dev/todos')
+      .then(res => {
+        console.log(res);
+        return res.data;
+        // return res;
+      })
+      .catch(err => console.log(err));   
+  }
   
 
   render() {
@@ -32,9 +33,9 @@ class App extends React.Component {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>Hello World</p> 
-          {/* <button onClick={this.callAmplifyApi}>Call Amplify Rest API</button>
+          <button onClick={this.callAmplifyApi}>Call Amplify Rest API</button>
           <hr/>
-          <button onClick={this.callSlsApi}> Call Serverless Endpoint</button> */}
+          <button onClick={this.callSlsApi}> Call Serverless Endpoint</button>
           <h6>REMOVED BUTTONS</h6>
         </header>
       </div>

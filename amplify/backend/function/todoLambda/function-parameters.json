@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "auth": {
+      "amplifyconsoletest0c7ced0b": [
+        "create",
+        "read",
+        "update",
+        "delete"
+      ]
+    }
+  },
+  "lambdaLayers": []
+}
