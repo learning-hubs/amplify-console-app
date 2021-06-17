@@ -28,5 +28,35 @@
         }
       }
     }
+  },
+  "prod": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-amplifyconsoletest-prod-132521-authRole",
+      "UnauthRoleArn": "arn:aws:iam::006368964010:role/amplify-amplifyconsoletest-prod-132521-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::006368964010:role/amplify-amplifyconsoletest-prod-132521-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-amplifyconsoletest-prod-132521-deployment",
+      "UnauthRoleName": "amplify-amplifyconsoletest-prod-132521-unauthRole",
+      "StackName": "amplify-amplifyconsoletest-prod-132521",
+      "StackId": "arn:aws:cloudformation:us-east-2:006368964010:stack/amplify-amplifyconsoletest-prod-132521/3daca2c0-cf41-11eb-80a0-02296ac9791a",
+      "AmplifyAppId": "d2hmce1btx4ttq"
+    },
+    "categories": {
+      "auth": {
+        "amplifyconsoletest0c7ced0b": {}
+      },
+      "function": {
+        "todoLambda": {
+          "deploymentBucketName": "amplify-amplifyconsoletest-prod-132521-deployment",
+          "s3Key": "amplify-builds/todoLambda-3579617769634d37374f-build.zip"
+        }
+      },
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d2hmce1btx4ttq",
+          "type": "cicd"
+        }
+      }
+    }
   }
 }
