@@ -50,7 +50,7 @@ app.use(function(req, res, next) {
   },
   {
     id: 4,
-    name: 'Repeat',
+    name: 'Repeat new to do',
   },
 ];
 
